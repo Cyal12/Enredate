@@ -4,11 +4,13 @@ import Prueba from './Prueba'
 import Navbar from './Navbar'
 import Home from './Home'
 import CreateAccount from './CreateAccount'
+import '@mantine/core/styles.css';
+import { MantineProvider } from '@mantine/core';
 
 function App() {
 
   return (
-    <>
+    <MantineProvider>
       <BrowserRouter>
       <Navbar/>
         <Routes>
@@ -17,7 +19,7 @@ function App() {
           <Route path='/createAccount' element={<CreateAccount/>}/>
         </Routes>
       </BrowserRouter>
-    </>
+    </MantineProvider>
   )
 }
 
