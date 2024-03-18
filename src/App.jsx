@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import Explore from './Register/eXPLORE';
-import CreateAccount from './Register/CreateAccount';
+import SignUp from './Register/SignUp';
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Explore/>}/>
           <Route path='/prueba' element={<Prueba/>}/>
-          <Route path='/createAccount' element={<CreateAccount/>}/>
+          <Route path='/signUp' element={<SignUp/>}/>
         </Routes>
       </BrowserRouter>
     </MantineProvider>

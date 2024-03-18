@@ -20,7 +20,7 @@ const Explore = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi moecenas quis interdum enim anim molestie faucibus. Pretium non non massa eros, nunc, urna. Ac lorem sagittis donec vel. Amet, duis justo, quam quisque egestas. Quam enim at dictum condimentum. Suspendisse.</p>
         </div>
           
-        <Link to="/createAccount">
+        <Link to="/signUp">
           <button>Comencemos</button>
         </Link>
         </div>
