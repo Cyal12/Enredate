@@ -1,11 +1,11 @@
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Prueba from './Prueba'
-import Navbar from './Navbar'
-import Home from './Home'
-import CreateAccount from './CreateAccount'
+import Prueba from './components/Prueba';
+import Navbar from './components/Navbar';
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
+import Explore from './Register/eXPLORE';
+import CreateAccount from './Register/CreateAccount';
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
       <Navbar/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Explore/>}/>
           <Route path='/prueba' element={<Prueba/>}/>
           <Route path='/createAccount' element={<CreateAccount/>}/>
         </Routes>
